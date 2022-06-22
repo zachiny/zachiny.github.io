@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>顾师傅的修行记录</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="顾师傅的修行记录"><meta name="msapplication-TileImage" content="/img/favicon_gu.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="顾师傅的修行记录"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="一个兴趣使然记录感悟的修行者"><meta property="og:type" content="blog"><meta property="og:title" content="顾师傅的修行记录"><meta property="og:url" content="https://kushiny.github.io/"><meta property="og:site_name" content="顾师傅的修行记录"><meta property="og:description" content="一个兴趣使然记录感悟的修行者"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://kushiny.github.io/img/og_image.png"><meta property="article:author" content="顾师傅"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://kushiny.github.io"},"headline":"顾师傅的修行记录","image":["https://kushiny.github.io/img/og_image.png"],"author":{"@type":"Person","name":"顾师傅"},"description":"一个兴趣使然记录感悟的修行者"}</script><link rel="icon" href="/img/favicon_gu.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><div class="Skin-whitemove"></div><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_gu.png" alt="顾师傅的修行记录" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="Cursor_miku"></div><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/18439.html"><i class="fas fa-angle-double-right"></i>Python面向对象</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-06-01T02:10:18.000Z" title="6/1/2021, 10:10:18 AM">2021-06-01</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-clock"> </i>21 分钟读完 (大约3156个字)</span></div></div><div class="content"><h2 id="面向对象介绍："><a href="#面向对象介绍：" class="headerlink" title="面向对象介绍："></a>面向对象介绍：</h2><p>面向对象是一种编程思想，根据现实中人类对事物的理解，基于逻辑思维方式抽象化计算机编程语言，以此构建软件系统。</p>
+<p>比如说我们需要用编程语言描述一类事物——车。此处的“车”仅仅只是一个抽象概念，因为你不知道车是两轮的人力自行车，三轮的电瓶三轮车，还是四轮的电动汽车。</p>
+<p>面向对象是将抽象的事物加以具现化的技术方法。</p>
+<h2 id="定义类："><a href="#定义类：" class="headerlink" title="定义类："></a>定义类：</h2><p>在面向对象方法中，类是描述对象的集合。<br>接下来简单地来定义一个类：</p>
+<p>这是一个没有进行操作的空白类。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Car:</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">class Car(object):</span><br><span class="line">    pass</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>&gt;&gt;&gt; print(Car)<br>&lt;\class ‘__main__.Car’&gt;<br>&gt;&gt;&gt; print(Car())<br>&lt;__main__.Car object at 0x0000000001227C50&gt;</p>
+</blockquote>
+<h2 id="创建对象："><a href="#创建对象：" class="headerlink" title="创建对象："></a>创建对象：</h2><p>对象是类的实例。</p>
+<p>接下来简单地来创建一个类的对象：</p>
+<blockquote>
+<p>&gt;&gt;&gt; tesla = Car()<br>&gt;&gt;&gt; print(tesla)<br>&lt;__main__.Car object at 0x0000000001227FD0&gt;</p>
+</blockquote>
+<h2 id="类的成员："><a href="#类的成员：" class="headerlink" title="类的成员："></a>类的成员：</h2><pre class="mermaid">graph TB
+    类的成员---成员变量
+    类的成员---构造方法
+    类的成员---成员方法
+    类的成员---属性
+    属性---property
+    成员变量---类变量
+    成员变量---实例变量
+    成员方法---类方法
+    成员方法---实例方法</pre>
+
+<p>成员变量：类变量和实例变量组合的统称。<br>成员方法：类方法和实例方法组合的统称。<br>属性：特指property，而非attribute（特征，特值）。</p>
+<blockquote>
+<p>注：其实类的所谓“方法”其实就是函数。</p>
+</blockquote>
+<h3 id="实例变量"><a href="#实例变量" class="headerlink" title="实例变量"></a>实例变量</h3><p>实例变量：实例特有的变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        def info(self, country, brand):</span><br><span class="line">            # 创建和初始化实例变量country</span><br><span class="line">            self.country &#x3D; country</span><br><span class="line">            # 创建和初始化实例变量brand</span><br><span class="line">            self.brand &#x3D; brand</span><br><span class="line">    </span><br><span class="line">&gt;&gt;&gt; tesla &#x3D; Car()</span><br><span class="line">&gt;&gt;&gt; tesla.info(&quot;美国&quot;, &quot;特斯拉&quot;)  # 实例变量实例化</span><br><span class="line">&gt;&gt;&gt; print(&quot;&#123;&#125;&#123;&#125;汽车&quot;.format(tesla.country, tesla.brand))</span><br><span class="line">美国特斯拉汽车</span><br><span class="line">&gt;&gt;&gt; tesla.country</span><br><span class="line">&#39;美国&#39;</span><br><span class="line">&gt;&gt;&gt; tesla.brand</span><br><span class="line">&#39;特斯拉&#39;</span><br></pre></td></tr></table></figure>
+
+<p>tesla是一个实例，实例变量是对象个体特有的“数据”，即上面实例运行类方法，即info()函数时的tesla.country, tesla.brand。</p>
+<h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><p>构造方法：类的__init__(self)方法（函数）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        # 构造方法</span><br><span class="line">        def __init__(self, brand, country):</span><br><span class="line">            self.brand &#x3D; brand</span><br><span class="line">            self.country &#x3D; country</span><br><span class="line">    </span><br><span class="line">&gt;&gt;&gt; byd &#x3D; Car(&quot;中国&quot;, &quot;比亚迪&quot;)</span><br><span class="line">&gt;&gt;&gt; print(&quot;&#123;&#125;牌汽车来自&#123;&#125;&quot;.format(byd.brand, byd.country))</span><br><span class="line">比亚迪牌汽车来自中国</span><br></pre></td></tr></table></figure>
+
+<p>Python的__init__()方法是一个非常特殊的方法，类实例化时会自动调用，与4.1 实例变量例子不同，byd实例只需要直接声明就可以调用，而不需要2步。</p>
+<h3 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h3><p>实例方法：实例特有的方法（函数）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        def __init__(self, brand, country):</span><br><span class="line">            self.brand &#x3D; brand</span><br><span class="line">            self.country &#x3D; country</span><br><span class="line">        </span><br><span class="line">        # 实例方法</span><br><span class="line">        def output(self):</span><br><span class="line">            print(&quot;&#123;&#125;&#123;&#125;汽车&quot;.format(self.country, self.brand))</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; tesla &#x3D; Car(&quot;美国&quot;, &quot;特斯拉&quot;)</span><br><span class="line">&gt;&gt;&gt; tesla.output</span><br><span class="line">&lt;bound method Car.output of &lt;__main__.Car object at 0x0000000000B18FD0&gt;&gt;</span><br><span class="line">&gt;&gt;&gt; tesla.output()</span><br><span class="line">美国特斯拉汽车</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="类变量"><a href="#类变量" class="headerlink" title="类变量"></a>类变量</h3><p>类变量：类定义的公有变量，属于类，不属于个体实例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        # 类变量</span><br><span class="line">        wheel &#x3D; 4</span><br><span class="line">    </span><br><span class="line">&gt;&gt;&gt; print(Car.wheel)  # （一） 直接使用类变量</span><br><span class="line">4</span><br><span class="line">&gt;&gt;&gt; tesla &#x3D; Car()</span><br><span class="line">&gt;&gt;&gt; print(tesla.wheel)  # （二） 类实例化后，使用类的对象调用类变量。</span><br><span class="line">4</span><br><span class="line">&gt;&gt;&gt; print(&quot;特斯拉类&#123;&#125;有&#123;&#125;个轮子&quot;.format(tesla, tesla.wheel))</span><br><span class="line">特斯拉类&lt;__main__.Car object at 0x0000000001208FD0&gt;有4个轮子</span><br><span class="line">&gt;&gt;&gt; print(&quot;汽车类&#123;&#125;有&#123;&#125;个轮子&quot;.format(Car(), Car.wheel))</span><br><span class="line">汽车类&lt;__main__.Car object at 0x0000000001210048&gt;有4个轮子</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注：像实例变量、类变量，与实例方法，类方法之间的区别用一个简单的例子来说明。<br>比如在一个定义了类变量，轮子 wheel = 4 的汽车类，有这个类的2个实例特斯拉tesla，比亚迪byd。2个实例虽然都有名称，数值完全一样的实例变量，但是就像我们不会说特斯拉汽车轮子等于比亚迪的汽车轮子一样，tesla这个实例不等于byd这个实例。<br>类方法和实例方法区别同理。</p>
+</blockquote>
+<h3 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h3><p>类方法：即类的公有函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        wheel &#x3D; 4</span><br><span class="line"></span><br><span class="line">        def sign(self):</span><br><span class="line">            print(&quot;悬浮汽车天下第一！&quot;)</span><br><span class="line">        </span><br><span class="line">        # 类方法</span><br><span class="line">        @classmethod</span><br><span class="line">        def akinasan(cls):</span><br><span class="line">            print(&quot;&#123;&#125;轮的AE86，永远的秋名山车神！&quot;.format(cls.wheel))  # 调用类的属性</span><br><span class="line">            cls().sign()  # 调用类的方法</span><br><span class="line">            </span><br><span class="line">&gt;&gt;&gt; Car.akinasan()</span><br><span class="line">4轮的AE86，永远的秋名山车神！</span><br><span class="line">悬浮汽车天下第一！</span><br></pre></td></tr></table></figure>
+<p>使用classmethod修饰符的方法（函数）是类方法，同类变量一样，不需要实例化；且类方法不需要 self 参数，但第一个参数需要是表示自身类的 cls 参数，可以来调用类的属性，类的方法，实例化对象等。</p>
+<h2 id="封装性："><a href="#封装性：" class="headerlink" title="封装性："></a>封装性：</h2><p>Python面向对象三大特征：封装，继承，多态。<br>封装性是指类的变量，方法（函数），属性只能使用类或实例调用，不允许类外或实例外调用。<br>下面来浅析Python封装性。</p>
+<h3 id="私有变量"><a href="#私有变量" class="headerlink" title="私有变量"></a>私有变量</h3><p>私有变量，变量名称添加“__”2个下划线。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        __engine &#x3D; &quot;火种源&quot;  # 创建类私有变量</span><br><span class="line">        def __init__(self, name, planet):</span><br><span class="line">            self.name &#x3D; name  # 创建并初始化公有实例变量</span><br><span class="line">            self.__planet &#x3D; planet  # 创建并初始化私有实例变量</span><br><span class="line">    </span><br><span class="line">        def desc(self):</span><br><span class="line">            print(&quot;能源：&#123;&#125;\n姓名：&#123;&#125;\n星球：&#123;&#125;&quot;.format(Car.__engine, self.name, self.__planet))</span><br><span class="line">            </span><br><span class="line">&gt;&gt;&gt; Optimus_Prime &#x3D; Car(&#39;擎天柱&#39;, &#39;赛博坦星&#39;)</span><br><span class="line">&gt;&gt;&gt; Optimus_Prime.desc()</span><br><span class="line">能源：火种源</span><br><span class="line">姓名：擎天柱</span><br><span class="line">星球：赛博坦星</span><br></pre></td></tr></table></figure>
+
+<p>若引用私有变量则引发错误：    </p>
+<blockquote>
+<p>&gt;&gt;&gt; print(Optimus_Prime.__engine)<br>AttributeError: ‘Car’ object has no attribute ‘__engine’    </p>
+</blockquote>
+<blockquote>
+<p>&gt;&gt;&gt; print(Car.__engine)<br>AttributeError: type object ‘Car’ has no attribute ‘__engine’    </p>
+</blockquote>
+<h3 id="私有方法"><a href="#私有方法" class="headerlink" title="私有方法"></a>私有方法</h3><p>类似于私有变量，方法（函数）前添加“__”2个下划线。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        __engine &#x3D; &quot;火种源&quot;  # 创建类私有变量</span><br><span class="line">        def __init__(self, name, planet):</span><br><span class="line">            self.name &#x3D; name  # 创建并初始化公有实例变量</span><br><span class="line">            self.__planet &#x3D; planet  # 创建并初始化私有实例变量</span><br><span class="line">    </span><br><span class="line">        def __desc(self):</span><br><span class="line">            print(&quot;能源：&#123;&#125;\n姓名：&#123;&#125;\n星球：&#123;&#125;&quot;.format(Car.__engine, self.name, self.__planet))</span><br><span class="line">            </span><br><span class="line">        def print_info(self):</span><br><span class="line">            self.__desc()</span><br><span class="line">    </span><br><span class="line">&gt;&gt;&gt; Optimus_Prime &#x3D; Car(&#39;擎天柱&#39;, &#39;赛博坦星&#39;)</span><br><span class="line">&gt;&gt;&gt; Optimus_Prime.print_info()</span><br><span class="line">能源：火种源</span><br><span class="line">姓名：擎天柱</span><br><span class="line">星球：赛博坦星</span><br></pre></td></tr></table></figure>
+
+<p>私有方法直接调用会引发错误：</p>
+<blockquote>
+<p>&gt;&gt;&gt; print(Optimus_Prime.__desc())<br>AttributeError: ‘Car’ object has no attribute ‘__desc’<br>&gt;&gt;&gt; print(Car.__desc())<br>AttributeError: type object ‘Car’ has no attribute ‘__desc’    </p>
+</blockquote>
+<h3 id="使用属性"><a href="#使用属性" class="headerlink" title="使用属性"></a>使用属性</h3><p>使用私有变量，私有方法是为了实现对象的封装，那么封装后如何访问？</p>
+<p>方法一：通过公有的set（赋值）和get（取值）方法访问。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        def __init__(self, name, planet):</span><br><span class="line">            self.name &#x3D; name  </span><br><span class="line">            self.__live &#x3D; planet  </span><br><span class="line">    </span><br><span class="line">        def desc(self):</span><br><span class="line">            print(&quot;&#123;&#125;：汽车人&quot;.format(self.name))</span><br><span class="line">        </span><br><span class="line">        # 定义get()方法，返回私有实例变量__live    </span><br><span class="line">        def get_live(self):</span><br><span class="line">            return &quot;居住地：&#123;&#125;&quot;.format(self.__live)</span><br><span class="line">    </span><br><span class="line">        # 定义set()方法，通过planet参数更新私有实例变量__live</span><br><span class="line">        def set_live(self, planet):</span><br><span class="line">            self.__live &#x3D; planet</span><br><span class="line">    </span><br><span class="line">&gt;&gt;&gt; Optimus_Prime &#x3D; Car(&#39;擎天柱&#39;, &#39;赛博坦星&#39;)</span><br><span class="line">&gt;&gt;&gt; Optimus_Prime.desc()</span><br><span class="line">擎天柱：汽车人</span><br><span class="line">&gt;&gt;&gt; print(Optimus_Prime.get_live())</span><br><span class="line">居住地：赛博坦星</span><br><span class="line">&gt;&gt;&gt; Optimus_Prime.set_live(&#39;地球&#39;)</span><br><span class="line">&gt;&gt;&gt; print(Optimus_Prime.get_live())</span><br><span class="line">居住地：地球</span><br></pre></td></tr></table></figure>
+
+<p>方法二：使用属性(更好，更方便)。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car():</span><br><span class="line">        </span><br><span class="line">        def __init__(self, name, planet):</span><br><span class="line">            self.name &#x3D; name  </span><br><span class="line">            self.__live &#x3D; planet  # 私有变量__live,对应的属性名需要去除前面双下划线，即live</span><br><span class="line">    </span><br><span class="line">        def desc(self):</span><br><span class="line">            print(&quot;&#123;&#125;：汽车人&quot;.format(self.name))</span><br><span class="line">        </span><br><span class="line">        # 定义live属性的get()方法（函数），使用@property装饰器进行修饰，方法（函数）名就是属性名，即live</span><br><span class="line">        @property</span><br><span class="line">        def live(self):</span><br><span class="line">            return &quot;居住地：&#123;&#125;&quot;.format(self.__live)</span><br><span class="line"></span><br><span class="line">        # 定义live属性的set()方法（函数），使用@[属性名].setter装饰器进行修饰</span><br><span class="line">        @live.setter</span><br><span class="line">        def live(self, planet):</span><br><span class="line">            self.__live &#x3D; planet</span><br><span class="line">    </span><br><span class="line">&gt;&gt;&gt; Optimus_Prime &#x3D; Car(&#39;擎天柱&#39;, &#39;赛博坦星&#39;)</span><br><span class="line">&gt;&gt;&gt; Optimus_Prime.desc()</span><br><span class="line">擎天柱：汽车人</span><br><span class="line">&gt;&gt;&gt; print(Optimus_Prime.live)  # 实例的属性访问</span><br><span class="line">赛博坦星</span><br><span class="line">&gt;&gt;&gt; Optimus_Prime.live &#x3D; &#39;地球&#39;  # 实例的属性赋值 </span><br><span class="line">&gt;&gt;&gt; print(Optimus_Prime.live)</span><br><span class="line">地球</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="继承性："><a href="#继承性：" class="headerlink" title="继承性："></a>继承性：</h2><p>接下来浅析Python面向对象的继承性。</p>
+<p>举个例子：<br>比亚迪汽车（类）是一种品牌汽车（类），具有汽车（类）的全部特点，即属性和方法。<br>汽车都有4个轮子，有引擎，有刹车等，比亚迪<del>特斯拉</del>汽车当然都有。<br>在面向对象中汽车是一般类，称之为“父类”；比亚迪汽车是特殊类，称之为“子类”。<br>特殊类拥有一般类的全部属性和方法，故曰：子类继承父类，即继承性。</p>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car(object):</span><br><span class="line"></span><br><span class="line">        def __init__(self, brand):</span><br><span class="line">            self.brand &#x3D; brand</span><br><span class="line"></span><br><span class="line">        def has_types(self):</span><br><span class="line">            return &quot;&#123;&#125;旗下有电动汽车&quot;.format(self.brand)</span><br><span class="line"></span><br><span class="line">        def engine_type(self):</span><br><span class="line">            print(&quot;汽车有传统燃油汽车，燃料电池汽车等多类型汽车&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class BYD(Car):</span><br><span class="line"></span><br><span class="line">        def __init__(self, brand, engine):</span><br><span class="line">            super().__init__(brand)</span><br><span class="line">            self.engine &#x3D; engine</span><br><span class="line"></span><br><span class="line">        def engine_type(self):</span><br><span class="line">            super().engine_type()</span><br><span class="line">            print(&quot;比亚迪有&#123;&#125;汽车&quot;.format(self.engine))</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; byd &#x3D; BYD(&#39;比亚迪&#39;, &#39;新能源电动&#39;)</span><br><span class="line">&gt;&gt;&gt; print(byd.has_types())</span><br><span class="line">比亚迪旗下有电动汽车</span><br><span class="line">&gt;&gt;&gt; byd.engine_type()</span><br><span class="line">汽车有传统燃油汽车，燃料电池汽车多种汽车</span><br><span class="line">比亚迪有新能源电动汽车</span><br></pre></td></tr></table></figure>
+
+<h3 id="多继承"><a href="#多继承" class="headerlink" title="多继承"></a>多继承</h3><p>多继承，即多个继承。<br>举个例子：<br>混合动力汽车是一种汽车，这种汽车既使用汽油驱动又使用电力驱动，既继承了汽油驱动车的特点，有继承了电力驱动车的特点。<br>多继承由于继承多个对象，因此继承存在优先性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Fuel_vehicle(object):</span><br><span class="line"></span><br><span class="line">        def oil(self):</span><br><span class="line">            print(&quot;汽车使用燃油&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Electric_vehicle(object):</span><br><span class="line"></span><br><span class="line">        def electricity(self):</span><br><span class="line">            print(&quot;汽车使用电力&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Hybrid_vehicle(Fuel_vehicle, Electric_vehicle):</span><br><span class="line"></span><br><span class="line">        def __init__(self):</span><br><span class="line">            super(Hybrid_vehicle, self).oil()</span><br><span class="line">            super(Hybrid_vehicle, self).electricity()</span><br><span class="line">            print(&quot;混合动力汽车&quot;)</span><br><span class="line">&gt;&gt;&gt; Hybrid_vehicle()</span><br><span class="line">汽车使用燃油</span><br><span class="line">汽车使用电力</span><br><span class="line">混合动力汽车</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h3><p>多继承对父类方法（函数）进行重写，即修改方法内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Fuel_vehicle(object):</span><br><span class="line"></span><br><span class="line">        def __init__(self):</span><br><span class="line">            print(&quot;汽车只使用燃油&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Electric_vehicle(object):</span><br><span class="line"></span><br><span class="line">        def __init__(self):</span><br><span class="line">            print(&quot;汽车只使用电力&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Hybrid_vehicle(Fuel_vehicle, Electric_vehicle):</span><br><span class="line"></span><br><span class="line">        def __init__(self):  # 重写__init__函数。</span><br><span class="line">            print(&quot;汽车既使用燃油又使用电力&quot;)</span><br><span class="line">&gt;&gt;&gt; Hybrid_vehicle()</span><br><span class="line">汽车既使用燃油又使用电力</span><br></pre></td></tr></table></figure>
+
+<h2 id="多态性："><a href="#多态性：" class="headerlink" title="多态性："></a>多态性：</h2><p>最后浅析Python面向对象的多态性。</p>
+<p>举个例子：<br>比亚迪汽车，特斯拉汽车，丰田汽车都是汽车，这三种汽车都有品牌，价格，种类，但是它们“品牌”，“价格”，“种类”各不相同。<br>子类出于父类而别于父类，故称之为：对象表现出多种形态，即多态性。</p>
+<h3 id="继承与多态"><a href="#继承与多态" class="headerlink" title="继承与多态"></a>继承与多态</h3><p>在多个子类继承父类，并重写父类方法后，这些子类所创建的对象之间就是多态的。这些对象采用不同的方式实现父类方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class Car(object):</span><br><span class="line"></span><br><span class="line">        def category(self):</span><br><span class="line">            print(&quot;不知道是燃油汽车还是电动汽车或是其它类型汽车&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Fuel_vehicle(Car):</span><br><span class="line"></span><br><span class="line">        def category(self):</span><br><span class="line">            print(&quot;燃油汽车&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Electric_vehicle(Car):</span><br><span class="line"></span><br><span class="line">        def category(self):</span><br><span class="line">            print(&quot;电动汽车&quot;)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; car &#x3D; Car()</span><br><span class="line">&gt;&gt;&gt; toyota &#x3D; Fuel_vehicle()</span><br><span class="line">&gt;&gt;&gt; tesla &#x3D; Electric_vehicle()</span><br><span class="line">&gt;&gt;&gt; car.category()</span><br><span class="line">不知道是燃油汽车还是电动汽车或是其它类型汽车</span><br><span class="line">&gt;&gt;&gt; toyota.category()</span><br><span class="line">燃油汽车</span><br><span class="line">&gt;&gt;&gt; tesla.category()</span><br><span class="line">电动汽车</span><br></pre></td></tr></table></figure>
+
+<h3 id="鸭子类测试与多态"><a href="#鸭子类测试与多态" class="headerlink" title="鸭子类测试与多态"></a>鸭子类测试与多态</h3><p>鸭子类型测试：若看到一只鸟走起来像鸭子、游泳起来像鸭子、叫起来也像鸭子，那么这只鸟可以被称为鸭子。<br>Python支持鸭子类型测试，Python解释器不检查发生多态的对象是否继承了同一个父类，只要它们有相同的方法（函数）<br>它们之间就是多态的。</p>
+<p>定义一个鸭子类型测试函数test_it()，接受返回speed()方法的对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; def test_it(self):</span><br><span class="line">        return self.speed()</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; class Car(object):</span><br><span class="line"></span><br><span class="line">    def speed(self):</span><br><span class="line">        print(&quot;汽车一般时速在30~200Km&#x2F;h&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Fuel_vehicle(Car):</span><br><span class="line"></span><br><span class="line">        def speed(self):</span><br><span class="line">            print(&quot;燃油汽车时速在60~120Km&#x2F;h&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Electric_vehicle(Car):</span><br><span class="line"></span><br><span class="line">        def speed(self):</span><br><span class="line">            print(&quot;电动汽车时速在90~150Km&#x2F;h&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    class Fantasy_car(Car):</span><br><span class="line"></span><br><span class="line">        def speed(self):</span><br><span class="line">            print(&quot;汽车飞船时速在200~300Km&#x2F;h&quot;)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; test_it(Car())</span><br><span class="line">汽车一般时速在30~200Km&#x2F;h</span><br><span class="line">&gt;&gt;&gt; test_it(Fuel_vehicle())</span><br><span class="line">燃油汽车时速在60~120Km&#x2F;h</span><br><span class="line">&gt;&gt;&gt; test_it(Electric_vehicle())</span><br><span class="line">电动汽车时速在90~150Km&#x2F;h</span><br><span class="line">&gt;&gt;&gt; test_it(Fantasy_car())</span><br><span class="line">汽车飞船时速在200~300Km&#x2F;h</span><br></pre></td></tr></table></figure>
+
+<p>这里Fantasy_car类，使用test_it()函数成功输出，即鸭子类型测试通过，Fantasy_car类属于汽车。</p>
+</div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"></div></article></div><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/6558.html"><i class="fas fa-angle-double-right"></i>Python内置函数05</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-05-27T06:15:07.000Z" title="5/27/2021, 2:15:07 PM">2021-05-27</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-clock"> </i>7 分钟读完 (大约1073个字)</span></div></div><div class="content"><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">内置函数</th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abs()</td>
+<td align="left">delattr()</td>
+<td align="left">hash()</td>
+<td align="left">memoryview()</td>
+<td align="left">set()</td>
+</tr>
+<tr>
+<td align="left">all()</td>
+<td align="left">dict()</td>
+<td align="left">help()</td>
+<td align="left">min()</td>
+<td align="left">setattr()</td>
+</tr>
+<tr>
+<td align="left">any()</td>
+<td align="left">dir()</td>
+<td align="left">hex()</td>
+<td align="left">next()</td>
+<td align="left">slice()</td>
+</tr>
+<tr>
+<td align="left">ascii()</td>
+<td align="left">divmod()</td>
+<td align="left">id()</td>
+<td align="left">object()</td>
+<td align="left">sorted()</td>
+</tr>
+<tr>
+<td align="left">bin()</td>
+<td align="left">enumerate()</td>
+<td align="left">input()</td>
+<td align="left">oct()</td>
+<td align="left">staticmethod()</td>
+</tr>
+<tr>
+<td align="left">bool()</td>
+<td align="left">eval()</td>
+<td align="left">int()</td>
+<td align="left">open()</td>
+<td align="left">str()</td>
+</tr>
+<tr>
+<td align="left">breakpoint()</td>
+<td align="left">exec()</td>
+<td align="left">isinstance()</td>
+<td align="left">ord()</td>
+<td align="left">sum()</td>
+</tr>
+<tr>
+<td align="left">bytearray()</td>
+<td align="left">filter()</td>
+<td align="left">issubclass()</td>
+<td align="left">pow()</td>
+<td align="left">super()</td>
+</tr>
+<tr>
+<td align="left">bytes()</td>
+<td align="left">float()</td>
+<td align="left">iter()</td>
+<td align="left">print()</td>
+<td align="left">tuple()</td>
+</tr>
+<tr>
+<td align="left">callable()</td>
+<td align="left">format()</td>
+<td align="left">len()</td>
+<td align="left">property()</td>
+<td align="left">type()</td>
+</tr>
+<tr>
+<td align="left">chr()</td>
+<td align="left">frozenset()</td>
+<td align="left">list()</td>
+<td align="left">range()</td>
+<td align="left">vars()</td>
+</tr>
+<tr>
+<td align="left">classmethod()</td>
+<td align="left">getattr()</td>
+<td align="left">locals()</td>
+<td align="left">repr()</td>
+<td align="left">zip()</td>
+</tr>
+<tr>
+<td align="left">compile()</td>
+<td align="left">globals()</td>
+<td align="left">map()</td>
+<td align="left">reversed()</td>
+<td align="left">__import__()</td>
+</tr>
+<tr>
+<td align="left">complex()</td>
+<td align="left">hasattr()</td>
+<td align="left">max()</td>
+<td align="left">round()</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p><strong>class set([iterable])</strong><br>集合对象。</p>
+<blockquote>
+<p>&gt;&gt;&gt; s = {1,2,3}<br>&gt;&gt;&gt; type(s)<br>&lt;\class ‘set’&gt;</p>
+</blockquote>
+<p><strong>setattr(object, name, value)</strong><br>设置对象属性值，name参数必须为对象存在属性的字符串格式，value可谓</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import math</span><br><span class="line">&gt;&gt;&gt; math.pi</span><br><span class="line">3.141592653589793</span><br><span class="line">&gt;&gt;&gt; setattr(math, &#39;pi&#39;, 3.14)</span><br><span class="line">&gt;&gt;&gt; math.pi</span><br><span class="line">3.14</span><br></pre></td></tr></table></figure>
+<p>等价于:    </p>
+<blockquote>
+<p>&gt;&gt;&gt; import math<br>&gt;&gt;&gt; math.pi<br>3.141592653589793<br>&gt;&gt;&gt; math.pi = 3.14<br>&gt;&gt;&gt; math.pi<br>3.14    </p>
+</blockquote>
+<p><strong>class slice(start, stop[, step])</strong><br>切片函数。返回切片对象，类似于range(start, stop, step)。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; l &#x3D; [i for i in range(1, 20, 2)]</span><br><span class="line">&gt;&gt;&gt; l</span><br><span class="line">[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]</span><br><span class="line">&gt;&gt;&gt; s &#x3D; slice(3, 9, 2)</span><br><span class="line">&gt;&gt;&gt; l[s]</span><br><span class="line">[7, 11, 15]</span><br></pre></td></tr></table></figure>
+<p>等价于</p>
+<blockquote>
+<p>&gt;&gt;&gt; l[3:9:2]<br>[7, 11, 15]    </p>
+</blockquote>
+<p>*<em>sorted(iterable, <em>, key=None, reverse=False)</em></em><br>排序函数。返回可迭代对象的元素排序后的新列表。</p>
+<blockquote>
+<p>&gt;&gt;&gt; r = [1, 8 ,134, 33, 456, 4]<br>&gt;&gt;&gt; sorted(r)<br>[1, 4, 8, 33, 134, 456]</p>
+</blockquote>
+<p><strong>@staticmethod</strong><br>转换一个模块为静态模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class C:</span><br><span class="line">    @staticmethod</span><br><span class="line">    def f(arg1, arg2, ...): ...</span><br></pre></td></tr></table></figure>
+
+<p><strong>class str(object=’’)</strong><br>字符串对象。</p>
+<blockquote>
+<p>&gt;&gt;&gt; s = “不知道说啥好”<br>&gt;&gt;&gt; type(s)<br>&lt;\class ‘str’&gt;    </p>
+</blockquote>
+<p><strong>sum(iterable, /, start=0)</strong><br>求和函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; sum([i for i in range(1,101)])</span><br><span class="line">5050</span><br></pre></td></tr></table></figure>
+
+<p><strong>super([type[, object-or-type]])</strong><br>super() 函数是用于调用父类或同级类的一个方法（代理对象）。<br>① 直接引用：<br>函数super()相当于一个桥梁，连接需要调用的函数后执行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class A:</span><br><span class="line">     def add(self, x):</span><br><span class="line">         y &#x3D; x + 1</span><br><span class="line">         print(y)</span><br><span class="line">class B(A):</span><br><span class="line">    def add_b(self, x):</span><br><span class="line">        super().add(x)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>&gt;&gt;&gt; b = B()<br>&gt;&gt;&gt; b.add_b(2)<br>3    </p>
+</blockquote>
+<p>② 单类继承：<br>函数super()取继承的子类值，执行其继承函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class A:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def add(self, m):</span><br><span class="line">        self.n +&#x3D; m</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class B(A):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def add(self, m):</span><br><span class="line">        super().add(m)  # 调用A类add函数，n取B类值&quot;3&quot;，add函数返回n值&#x3D;&#x3D;&gt; n &#x3D; 3 + 4 &#x3D;&#x3D;&gt; 7</span><br><span class="line">        self.n +&#x3D; 3  # n &#x3D; 7 + 3 &#x3D;&#x3D;&gt; 10</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>&gt;&gt;&gt; b = B()<br>&gt;&gt;&gt; b.add(4)<br>&gt;&gt;&gt; print(b.n)<br>10    </p>
+</blockquote>
+<p>③ 多类继承：<br>函数super()使用多继承，会涉及到查找顺序（MRO）问题。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">class A:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def add(self, m):</span><br><span class="line">        self.n +&#x3D; m</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class B(A):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def add(self, m):</span><br><span class="line">        super().add(m)</span><br><span class="line">        self.n +&#x3D; 3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class C(A):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 4</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def add(self, m):</span><br><span class="line">        super().add(m)</span><br><span class="line">        self.n +&#x3D; 4</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">class D(B,C):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 5</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def add(self, m):</span><br><span class="line">        super().add(m)</span><br><span class="line">        self.n +&#x3D; 5</span><br></pre></td></tr></table></figure>
+
+
+
+
+<blockquote>
+<p>&gt;&gt;&gt; d = D()<br>&gt;&gt;&gt; d.add(5)<br>&gt;&gt;&gt; print(d.n)<br>22    </p>
+</blockquote>
+<p>查找顺序:</p>
+<blockquote>
+<p>&gt;&gt;&gt; print(D.mro())<br>&gt;&gt;&gt; [&lt; class ‘__main__.D’&gt;, &lt; class ‘__main__.B’&gt;, &lt; class ‘__main__.C’&gt;, &lt; class ‘__main__.A’&gt;, &lt; class ‘object’&gt;]</p>
+</blockquote>
+<p>其调用路线如下：    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class D(B, C):          class B(A):            class C(A):             class A:</span><br><span class="line">    def add(self, m):       def add(self, m):      def add(self, m):       def add(self, m):</span><br><span class="line">        super().add(m)  1.---&gt;  super().add(m) 2.---&gt;  super().add(m)  3.---&gt;  self.n +&#x3D; m</span><br><span class="line">        self.n +&#x3D; 5   &lt;------6. self.n +&#x3D; 3    &lt;----5. self.n +&#x3D; 4     &lt;----4. &lt;--|</span><br><span class="line">        (17+5&#x3D;22)               (14+3&#x3D;17)              (10+4&#x3D;14)               (5+5&#x3D;10)</span><br></pre></td></tr></table></figure>
+
+<p><del>可能没什么用</del><br><del>多类继承调用函数super()按照继承类的顺序执行，此时涉及Python语言的多态性。若被调用函数执行完毕，结果可能仅继承一个类，但查找顺序（MRO）依然是全部。</del><br><del>如：</del>    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">class A:</span><br><span class="line">    def \__init__(self):</span><br><span class="line">        self.n &#x3D; 2    </span><br><span class="line">    def add(self, m):</span><br><span class="line">        self.n +&#x3D; m</span><br><span class="line">class A10:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 20</span><br><span class="line">    def add(self, m):</span><br><span class="line">        self.n +&#x3D; m</span><br><span class="line">class B(A):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 3</span><br><span class="line">    def add(self, m):</span><br><span class="line">        super().add(m)</span><br><span class="line">        self.n +&#x3D; 3</span><br><span class="line">class C(A10):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 4</span><br><span class="line">    def add(self, m):</span><br><span class="line">        super().add(m)</span><br><span class="line">        self.n +&#x3D; 4</span><br><span class="line">class D(B, C):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.n &#x3D; 5</span><br><span class="line">    def add(self, m):</span><br><span class="line">        super().add(m)</span><br><span class="line">        self.n +&#x3D; 5</span><br><span class="line">d &#x3D; D()</span><br><span class="line">d.add(5)</span><br><span class="line">print(d.n)</span><br><span class="line">print(D.mro())</span><br><span class="line"></span><br><span class="line">运行结果:</span><br><span class="line">18</span><br><span class="line">[&lt;class &#39;__main__.D&#39;&gt;, &lt;class &#39;__main__.C&#39;&gt;, &lt;class &#39;__main__.A10&#39;&gt;, &lt;class &#39;__main__.B&#39;&gt;, &lt;class &#39;__main__.A&#39;&gt;, &lt;class &#39;object&#39;&gt;]</span><br></pre></td></tr></table></figure>
+
+
+<p>若class D继承顺序由B-&gt;C变为C-&gt;B,即class D(C, B)<br>则：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">d &#x3D; D()</span><br><span class="line">d.add(5)</span><br><span class="line">print(d.n)</span><br><span class="line">print(D.mro())</span><br><span class="line"></span><br><span class="line">运行结果:</span><br><span class="line">19</span><br><span class="line">[&lt;class &#39;__main__.D&#39;&gt;, &lt;class &#39;__main__.C&#39;&gt;, &lt;class &#39;__main__.A10&#39;&gt;, &lt;class &#39;__main__.B&#39;&gt;, &lt;class &#39;__main__.A&#39;&gt;, &lt;class &#39;object&#39;&gt;]</span><br></pre></td></tr></table></figure>
+
+<p><strong>class tuple([iterable])</strong><br>元组对象。    </p>
+<blockquote>
+<p>&gt;&gt;&gt; t = {1,2,3}<br>&gt;&gt;&gt; type(t)<br>&lt;\class ‘tuple’&gt;    </p>
+</blockquote>
+<p><strong>class type(object)</strong><br>类型函数。返回对象类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class A:</span><br><span class="line">...     a &#x3D; 1</span><br><span class="line">...</span><br><span class="line">&gt;&gt;&gt; type(A)</span><br><span class="line">&lt;class &#39;type&#39;&gt;</span><br><span class="line">&gt;&gt;&gt; type(A())</span><br><span class="line">&lt;class &#39;__main__.A&#39;&gt;</span><br><span class="line">&gt;&gt;&gt; type(A.a)</span><br><span class="line">&lt;class &#39;int&#39;&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p><strong>vars([object])</strong><br>以字典形式返回对象的模块，类，实例或其他对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; class A:</span><br><span class="line">...     a &#x3D; 1</span><br><span class="line">...</span><br><span class="line">&gt;&gt;&gt; vars(A)</span><br><span class="line">mappingproxy(&#123;&#39;a&#39;: 1, &#39;__doc__&#39;: None, &#39;__dict__&#39;: &lt;attribute &#39;__dict__&#39; of &#39;A&#39;</span><br><span class="line">objects&gt;, &#39;__module__&#39;: &#39;__main__&#39;, &#39;__weakref__&#39;: &lt;attribute &#39;__weakref__&#39; of &#39;</span><br><span class="line">A&#39; objects&gt;&#125;)</span><br></pre></td></tr></table></figure>
+
+
+<p>*<em>zip(<em>iterables)</em></em><br>zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;a &#x3D; [1,2,3]</span><br><span class="line">&gt;&gt;&gt; b &#x3D; [4,5,6]</span><br><span class="line">&gt;&gt;&gt; c &#x3D; [4,5,6,7,8]</span><br><span class="line">&gt;&gt;&gt; zipped &#x3D; zip(a,b)     # 打包为元组的列表</span><br><span class="line">[(1, 4), (2, 5), (3, 6)]</span><br><span class="line">&gt;&gt;&gt; zip(a,c)              # 元素个数与最短的列表一致</span><br><span class="line">[(1, 4), (2, 5), (3, 6)]</span><br><span class="line">&gt;&gt;&gt; zip(*zipped)          # 与 zip 相反，*zipped 可理解为解压，返回二维矩阵式</span><br><span class="line">[(1, 2, 3), (4, 5, 6)]</span><br></pre></td></tr></table></figure>
+
+<p>**<strong>import</strong>(name, globals=None, locals=None, fromlist=(), level=0)**<br><strong>import</strong>() 函数用于动态加载类和函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">a.py 文件：</span><br><span class="line"></span><br><span class="line">import os  </span><br><span class="line">print (&#39;文件a.py的id:&#123;&#125;&#39;.format(id(os)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">b.py 文件</span><br><span class="line">import sys  </span><br><span class="line">__import__(&#39;a&#39;)  # 导入 a.py 模块</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">执行b.py文件</span><br><span class="line">运行结果：</span><br><span class="line">文件a.py的id:12679912</span><br></pre></td></tr></table></figure></div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"></div></article></div><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/55647.html"><i class="fas fa-angle-double-right"></i>Python内置函数04</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-05-12T07:37:54.000Z" title="5/12/2021, 3:37:54 PM">2021-05-12</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-clock"> </i>6 分钟读完 (大约940个字)</span></div></div><div class="content"><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">内置函数</th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abs()</td>
+<td align="left">delattr()</td>
+<td align="left">hash()</td>
+<td align="left">memoryview()</td>
+<td align="left">set()</td>
+</tr>
+<tr>
+<td align="left">all()</td>
+<td align="left">dict()</td>
+<td align="left">help()</td>
+<td align="left">min()</td>
+<td align="left">setattr()</td>
+</tr>
+<tr>
+<td align="left">any()</td>
+<td align="left">dir()</td>
+<td align="left">hex()</td>
+<td align="left">next()</td>
+<td align="left">slice()</td>
+</tr>
+<tr>
+<td align="left">ascii()</td>
+<td align="left">divmod()</td>
+<td align="left">id()</td>
+<td align="left">object()</td>
+<td align="left">sorted()</td>
+</tr>
+<tr>
+<td align="left">bin()</td>
+<td align="left">enumerate()</td>
+<td align="left">input()</td>
+<td align="left">oct()</td>
+<td align="left">staticmethod()</td>
+</tr>
+<tr>
+<td align="left">bool()</td>
+<td align="left">eval()</td>
+<td align="left">int()</td>
+<td align="left">open()</td>
+<td align="left">str()</td>
+</tr>
+<tr>
+<td align="left">breakpoint()</td>
+<td align="left">exec()</td>
+<td align="left">isinstance()</td>
+<td align="left">ord()</td>
+<td align="left">sum()</td>
+</tr>
+<tr>
+<td align="left">bytearray()</td>
+<td align="left">filter()</td>
+<td align="left">issubclass()</td>
+<td align="left">pow()</td>
+<td align="left">super()</td>
+</tr>
+<tr>
+<td align="left">bytes()</td>
+<td align="left">float()</td>
+<td align="left">iter()</td>
+<td align="left">print()</td>
+<td align="left">tuple()</td>
+</tr>
+<tr>
+<td align="left">callable()</td>
+<td align="left">format()</td>
+<td align="left">len()</td>
+<td align="left">property()</td>
+<td align="left">type()</td>
+</tr>
+<tr>
+<td align="left">chr()</td>
+<td align="left">frozenset()</td>
+<td align="left">list()</td>
+<td align="left">range()</td>
+<td align="left">vars()</td>
+</tr>
+<tr>
+<td align="left">classmethod()</td>
+<td align="left">getattr()</td>
+<td align="left">locals()</td>
+<td align="left">repr()</td>
+<td align="left">zip()</td>
+</tr>
+<tr>
+<td align="left">compile()</td>
+<td align="left">globals()</td>
+<td align="left">map()</td>
+<td align="left">reversed()</td>
+<td align="left">__import__()</td>
+</tr>
+<tr>
+<td align="left">complex()</td>
+<td align="left">hasattr()</td>
+<td align="left">max()</td>
+<td align="left">round()</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p><strong>class memoryview(obj)</strong><br>返回包括字节或或字节组的内部数据(类似于编码)结果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; v &#x3D; memoryview(b&#39;abcefg&#39;)</span><br><span class="line">&gt;&gt;&gt; v</span><br><span class="line">&lt;memory at 0x000000000070E408&gt;</span><br><span class="line">&gt;&gt;&gt; v[0]</span><br><span class="line">97</span><br><span class="line">&gt;&gt;&gt; v[1]</span><br><span class="line">98</span><br></pre></td></tr></table></figure>
+<p>*<em>min(arg1, arg2, <em>args、[, key])</em></em><br>返回参数最小值，若参数为迭代器，则返回最大的迭代器。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; min(1,2,3,4,5)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; min([1,2,3,4,5])</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; min([1,2,3,4,5], [6,7,8,9,10])</span><br><span class="line">[1,2,3,4,5]</span><br></pre></td></tr></table></figure>
+<p><strong>next(iterator[, default])</strong><br>返回从iterator的_<em>next_</em>() 模块检索的下一个项目。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; i &#x3D; iter([1,2,3])</span><br><span class="line">&gt;&gt;&gt; next(i)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; next(i)</span><br><span class="line">2</span><br><span class="line">&gt;&gt;&gt; next(i)</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+
+<p><strong>class object</strong><br>返回一个无特征对象。<br><del>鸡肋函数</del>  </p>
+<blockquote>
+<p>&gt;&gt;&gt;object()<br>&lt;\object object at 0x000000000048A100&gt;</p>
+</blockquote>
+<p><strong>oct(x)</strong><br>返回一个将整数转换为带‘0o’的八进制的字符串。</p>
+<blockquote>
+<p>&gt;&gt;&gt;oct(233)<br>‘0o351’  </p>
+</blockquote>
+<p><strong>open(file, mode=’r’, buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)</strong><br>打开文件返回文件操作对象。<br><del>open为文件操作起点。</del><br><del>close为文件操作终点。</del></p>
+<p>mode——打开文件模式：</p>
+<table>
+<thead>
+<tr>
+<th align="left">模式</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">‘r’</td>
+<td align="left">打开读取（默认），不存在文件报错</td>
+</tr>
+<tr>
+<td align="left">‘w’</td>
+<td align="left">打开写入，从文件首行覆盖写入</td>
+</tr>
+<tr>
+<td align="left">‘x’</td>
+<td align="left">创建打开，存在文件则报错</td>
+</tr>
+<tr>
+<td align="left">‘a’</td>
+<td align="left">追加写入，存在文件从尾行写入</td>
+</tr>
+<tr>
+<td align="left">‘b’</td>
+<td align="left">二进制模式</td>
+</tr>
+<tr>
+<td align="left">‘t’</td>
+<td align="left">文本模式（默认）</td>
+</tr>
+<tr>
+<td align="left">‘+’</td>
+<td align="left">打开更新（即读和写）</td>
+</tr>
+</tbody></table>
+<p>buffering——缓冲设置，不写默认即可。<br>encoding——编码格式，一般使用utf8。<br>errors——报错级别，不写默认即可。<br>newline——换行控制，默认换行符’\n’。<br>closefd——文件描述符号，不写默认即可。<br>opener——设置自定义开启器。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">行读写操作：</span><br><span class="line">----------------------------------------------------------------</span><br><span class="line">&gt;&gt;&gt; o &#x3D; open(&#39;info.txt&#39;, &#39;r&#39;, encoding&#x3D;&#39;UTF-8&#39;)</span><br><span class="line">&gt;&gt;&gt; o.read()</span><br><span class="line">&#39;读取文件信息&#39;</span><br><span class="line">&gt;&gt;&gt; o &#x3D; open(&#39;info.txt&#39;, &#39;w&#39;, encoding&#x3D;&#39;UTF-8&#39;)</span><br><span class="line">&gt;&gt;&gt; o.write(&quot;写模式&quot;)</span><br><span class="line">&gt;&gt;&gt; o.seek(0)</span><br><span class="line">&gt;&gt;&gt; o &#x3D; open(&#39;info.txt&#39;, &#39;a+&#39;, encoding&#x3D;&#39;UTF-8&#39;)</span><br><span class="line">&gt;&gt;&gt; o.seek(0)</span><br><span class="line">&gt;&gt;&gt; o.read()</span><br><span class="line">&#39;写模式&#39;</span><br><span class="line">&gt;&gt;&gt; o.write(&quot;追加模式&quot;)</span><br><span class="line">&gt;&gt;&gt; o.seek(0)</span><br><span class="line">&gt;&gt;&gt; o.read()</span><br><span class="line">&#39;写模式追加模式&#39;</span><br><span class="line">&gt;&gt;&gt; o.close()</span><br><span class="line">----------------------------------------------------------------</span><br><span class="line">函数读写操作：</span><br><span class="line">&gt;&gt;&gt; with open(&#39;info.txt&#39;, &#39;r&#39;, encoding&#x3D;&quot;utf-8&quot;) as f:</span><br><span class="line">...     f.read()</span><br><span class="line">...</span><br><span class="line">&#39;写模式追加模式&#39;</span><br><span class="line">&gt;&gt;&gt; with open(&#39;info.txt&#39;, &#39;w&#39;, encoding&#x3D;&quot;utf-8&quot;) as f:</span><br><span class="line">...     f.write(&quot;函数写入&quot;)</span><br><span class="line">...</span><br><span class="line">&gt;&gt;&gt; with open(&#39;info.txt&#39;, &#39;r&#39;, encoding&#x3D;&quot;utf-8&quot;) as f:</span><br><span class="line">...     f.read()</span><br><span class="line">...</span><br><span class="line">&#39;函数写入&#39;</span><br><span class="line">&gt;&gt;&gt; with open(&#39;info.txt&#39;, &#39;a+&#39;, encoding&#x3D;&quot;utf-8&quot;) as f:</span><br><span class="line">...     f.write(&quot;追加内容&quot;)</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; with open(&#39;info.txt&#39;, &#39;r&#39;, encoding&#x3D;&quot;utf-8&quot;) as f:</span><br><span class="line">...     f.read()</span><br><span class="line">...</span><br><span class="line">&#39;函数写入追加内容&#39;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>seek()函数是指针函数，指向读取位置。    </p>
+<p><strong>ord(c)</strong><br>返回使用 Unicode 编码的特征码字符串c的整数。</p>
+<blockquote>
+<p>&gt;&gt;&gt;ord(‘⑨’)<br>9320    </p>
+</blockquote>
+<p><strong>pow(base, exp[, mod])</strong><br>次方函数。返回参数base的exp次方结果，若含第三个参数，基于结果再取模值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; pow(2,3)</span><br><span class="line">8</span><br><span class="line">&gt;&gt;&gt; 2 ** 3</span><br><span class="line">8</span><br><span class="line">&gt;&gt;&gt; pow(2, 3, 3)</span><br><span class="line">2</span><br><span class="line">&gt;&gt;&gt; 2 ** 3 % 3</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<p>*<em>print(<em>objects, sep=’ ‘, end=’\n’, file=sys.stdout, flush=False)</em></em>    </p>
+<p>打印函数。<del>没啥可讲</del><br>默认换行打印end=’\n’，可重写为end=’\t’实现同行<del>花里胡哨</del>打印。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; l &#x3D; [1, 2, 3]</span><br><span class="line">&gt;&gt;&gt; for i in l:</span><br><span class="line">...     print(i)</span><br><span class="line">...</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">&gt;&gt;&gt; for i in l:</span><br><span class="line">...     print(i,end&#x3D;&#39;\t&#39;)</span><br><span class="line">...</span><br><span class="line">1       2       3       </span><br></pre></td></tr></table></figure>
+
+<p><strong>class property(fget=None, fset=None, fdel=None, doc=None)</strong></p>
+<p>返回属性值。<br>说明：<a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-property.html">https://www.runoob.com/python/python-func-property.html</a>    </p>
+<p><strong>class range(start, stop[, step])</strong><br>range 实际上是不可变序列类型。<br>start：开始（开区间）<br>stop：结束（闭区间）<br>step：间隔    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for i in range(1, 11, 2):</span><br><span class="line">...     print(i)</span><br><span class="line">...</span><br><span class="line">1</span><br><span class="line">3</span><br><span class="line">5</span><br><span class="line">7</span><br><span class="line">9</span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>repr(object)</strong><br>返回一个对象的<del>可打印表达形式的</del>字符串，显示打印范围广，可在自定义类中重写。</p>
+<blockquote>
+<p>&gt;&gt;&gt;repr(‘object’)<br>“‘object’”<br>&gt;&gt;&gt;repr(‘对象’)<br>“‘对象’”    </p>
+</blockquote>
+<p><strong>reversed(seq)</strong><br>返回一个反转的 iterator，参数 seq 必须是一个<del>有 __reversed__() 的</del> 对象 <del>或支持序列协议（具有从 0 开始的整数类型参数的 __len__() 方法和 __getitem__() 方法）</del>。    </p>
+<p><strong>round(number[, ndigits])</strong><br>截位函数。返回截位结果。</p>
+<blockquote>
+<p>&gt;&gt;&gt; round(6.66, 1)<br>6.7<br>&gt;&gt;&gt; round(-6.66, 1)<br>-6.7    </p>
+</blockquote>
+</div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"></div></article></div><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/6942.html"><i class="fas fa-angle-double-right"></i>Python内置函数03</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-05-07T03:35:00.000Z" title="5/7/2021, 11:35:00 AM">2021-05-07</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-clock"> </i>3 分钟读完 (大约501个字)</span></div></div><div class="content"><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">内置函数</th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abs()</td>
+<td align="left">delattr()</td>
+<td align="left">hash()</td>
+<td align="left">memoryview()</td>
+<td align="left">set()</td>
+</tr>
+<tr>
+<td align="left">all()</td>
+<td align="left">dict()</td>
+<td align="left">help()</td>
+<td align="left">min()</td>
+<td align="left">setattr()</td>
+</tr>
+<tr>
+<td align="left">any()</td>
+<td align="left">dir()</td>
+<td align="left">hex()</td>
+<td align="left">next()</td>
+<td align="left">slice()</td>
+</tr>
+<tr>
+<td align="left">ascii()</td>
+<td align="left">divmod()</td>
+<td align="left">id()</td>
+<td align="left">object()</td>
+<td align="left">sorted()</td>
+</tr>
+<tr>
+<td align="left">bin()</td>
+<td align="left">enumerate()</td>
+<td align="left">input()</td>
+<td align="left">oct()</td>
+<td align="left">staticmethod()</td>
+</tr>
+<tr>
+<td align="left">bool()</td>
+<td align="left">eval()</td>
+<td align="left">int()</td>
+<td align="left">open()</td>
+<td align="left">str()</td>
+</tr>
+<tr>
+<td align="left">breakpoint()</td>
+<td align="left">exec()</td>
+<td align="left">isinstance()</td>
+<td align="left">ord()</td>
+<td align="left">sum()</td>
+</tr>
+<tr>
+<td align="left">bytearray()</td>
+<td align="left">filter()</td>
+<td align="left">issubclass()</td>
+<td align="left">pow()</td>
+<td align="left">super()</td>
+</tr>
+<tr>
+<td align="left">bytes()</td>
+<td align="left">float()</td>
+<td align="left">iter()</td>
+<td align="left">print()</td>
+<td align="left">tuple()</td>
+</tr>
+<tr>
+<td align="left">callable()</td>
+<td align="left">format()</td>
+<td align="left">len()</td>
+<td align="left">property()</td>
+<td align="left">type()</td>
+</tr>
+<tr>
+<td align="left">chr()</td>
+<td align="left">frozenset()</td>
+<td align="left">list()</td>
+<td align="left">range()</td>
+<td align="left">vars()</td>
+</tr>
+<tr>
+<td align="left">classmethod()</td>
+<td align="left">getattr()</td>
+<td align="left">locals()</td>
+<td align="left">repr()</td>
+<td align="left">zip()</td>
+</tr>
+<tr>
+<td align="left">compile()</td>
+<td align="left">globals()</td>
+<td align="left">map()</td>
+<td align="left">reversed()</td>
+<td align="left">__import__()</td>
+</tr>
+<tr>
+<td align="left">complex()</td>
+<td align="left">hasattr()</td>
+<td align="left">max()</td>
+<td align="left">round()</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p><strong>hash(object)</strong><br>返回对象经过散列算法后变换的散列值，又译哈希值。</p>
+<blockquote>
+<p>&gt;&gt;&gt;hash(‘哈希算法’)<br>2428179105798671580</p>
+</blockquote>
+<p><strong>help([object])</strong><br>返回对象信息介绍。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; help(hex)</span><br><span class="line">Help on built-in function hex in module builtins:</span><br><span class="line"></span><br><span class="line">hex(number, &#x2F;)</span><br><span class="line">    Return the hexadecimal representation of an integer.</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; hex(12648430)</span><br><span class="line">    &#39;0xc0ffee&#39;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>hex(x)</strong><br>返回整数x转换为16进制结果。</p>
+<blockquote>
+<p>&gt;&gt;&gt;hex(233)<br>‘0xe9’    </p>
+</blockquote>
+<p><del>去结果0x，或转大小写方法。</del><br><del>&gt;&gt;&gt; ‘%#x’ % 255, ‘%x’ % 255, ‘%X’ % 255</del><br><del>(‘0xff’, ‘ff’, ‘FF’)</del><br><del>&gt;&gt;&gt; format(255, ‘#x’), format(255, ‘x’), format(255, ‘X’)</del><br><del>(‘0xff’, ‘ff’, ‘FF’)</del><br><del>&gt;&gt;&gt; f’{255:#x}’, f’{255:x}’, f’{255:X}’</del><br><del>(‘0xff’, ‘ff’, ‘FF’)</del>    </p>
+<p><strong>id(object)</strong><br>返回对象的标识信息。</p>
+<blockquote>
+<p>&gt;&gt;&gt;id(233)<br>18435576    </p>
+</blockquote>
+<p><strong>input()</strong><br>可携带提示输入后，返回输出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; s &#x3D; input()</span><br><span class="line">这是输入</span><br><span class="line">&gt;&gt;&gt; s</span><br><span class="line">&#39;这是输入&#39;</span><br><span class="line">&gt;&gt;&gt; s &#x3D; input(&quot;请输入：&quot;)</span><br><span class="line">请输入：再输入</span><br><span class="line">&gt;&gt;&gt; s</span><br><span class="line">&#39;再输入&#39;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>class int([x])</strong><br>返回整数。</p>
+<blockquote>
+<p>&gt;&gt;&gt; int(233)<br>233<br>&gt;&gt;&gt; int(-233)<br>-233</p>
+</blockquote>
+<p><strong>isinstance(object, classinfo)</strong><br>若object参数是classinfo的实例，返回True，否则False。<br>classinfo可为元组，满足任一返回True。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; n &#x3D; 233</span><br><span class="line">&gt;&gt;&gt; isinstance(n, int)</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt; s &#x3D; &quot;不知道说啥好&quot;</span><br><span class="line">&gt;&gt;&gt; isinstance(s, str)</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt; n &#x3D; 233</span><br><span class="line">&gt;&gt;&gt; isinstance(n, (int,str,dict))</span><br><span class="line">True</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>issubclass(class, classinfo)</strong><br>class参数是classinfo的子类，返回True，否则False。    </p>
+<blockquote>
+<p>&gt;&gt;&gt; from collections import Counter<br>&gt;&gt;&gt; issubclass(Counter, dict)<br>True</p>
+</blockquote>
+<p><strong>iter(object[, sentinel])</strong><br>返回一个 <em><strong><a href="iterator%EF%BC%9A%E8%BF%AD%E4%BB%A3%E5%99%A8">iterator</a></strong></em> 对象。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for i in [1,2,3]:</span><br><span class="line">	print(i)</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">&gt;&gt;&gt; for i in iter([1,2,3]):</span><br><span class="line">	print(i)</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+
+<p><strong>len(s)</strong><br>返回对象长度。</p>
+<blockquote>
+<p>&gt;&gt;&gt;len([1,2,3])<br>3</p>
+</blockquote>
+<p><strong>class list([iterable])</strong><br>列表对象。</p>
+<blockquote>
+<p>&gt;&gt;&gt; l = [1,2,3]<br>&gt;&gt;&gt; type(l)<br>&lt;\class ‘list’&gt;</p>
+</blockquote>
+<p><strong>locals()</strong><br>刷新当前环境下所有类和参数字典。于globals()环境一致。</p>
+<blockquote>
+<p>&gt;&gt;&gt; locals()<br>{‘<strong>doc</strong>‘: None, ‘<strong>builtins</strong>‘: &lt;module ‘builtins’ (built-in)&gt;, ‘<strong>loader</strong>‘: &lt;class ‘_frozen_importlib.BuiltinImporter’&gt;, ‘<strong>name</strong>‘: ‘<strong>main</strong>‘, ‘<strong>package</strong>‘: None, ‘<strong>spec</strong>‘: None}</p>
+</blockquote>
+<p><strong>map(function, iterable, …)</strong><br>映射函数。返回对应 iterable 的每个对象执行参数 function 后的函数。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; map(lambda x: x ** 2, [1, 2, 3, 4, 5])</span><br><span class="line">&lt;map object at 0x00000000035B60B8&gt;</span><br><span class="line">&gt;&gt;&gt; list(map(lambda x: x ** 2, [1, 2, 3, 4, 5]))</span><br><span class="line">[1, 4, 9, 16, 25]</span><br></pre></td></tr></table></figure>
+
+<p>*<em>max(arg1, arg2, <em>args、[, key])</em></em>    </p>
+<p>返回参数最大值，若参数为迭代器，则返回最大的迭代器。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; max(1,2,3,4,5)</span><br><span class="line">5</span><br><span class="line">&gt;&gt;&gt; max([1,2,3,4,5])</span><br><span class="line">5</span><br><span class="line">&gt;&gt;&gt; max([1,2,3,4,5], [6,7,8,9,10])</span><br><span class="line">[6, 7, 8, 9, 10]</span><br></pre></td></tr></table></figure>
+
+</div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"></div></article></div><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/56287.html"><i class="fas fa-angle-double-right"></i>Python内置函数02</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-05-07T01:44:00.000Z" title="5/7/2021, 9:44:00 AM">2021-05-07</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-clock"> </i>4 分钟读完 (大约536个字)</span></div></div><div class="content"><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">内置函数</th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abs()</td>
+<td align="left">delattr()</td>
+<td align="left">hash()</td>
+<td align="left">memoryview()</td>
+<td align="left">set()</td>
+</tr>
+<tr>
+<td align="left">all()</td>
+<td align="left">dict()</td>
+<td align="left">help()</td>
+<td align="left">min()</td>
+<td align="left">setattr()</td>
+</tr>
+<tr>
+<td align="left">any()</td>
+<td align="left">dir()</td>
+<td align="left">hex()</td>
+<td align="left">next()</td>
+<td align="left">slice()</td>
+</tr>
+<tr>
+<td align="left">ascii()</td>
+<td align="left">divmod()</td>
+<td align="left">id()</td>
+<td align="left">object()</td>
+<td align="left">sorted()</td>
+</tr>
+<tr>
+<td align="left">bin()</td>
+<td align="left">enumerate()</td>
+<td align="left">input()</td>
+<td align="left">oct()</td>
+<td align="left">staticmethod()</td>
+</tr>
+<tr>
+<td align="left">bool()</td>
+<td align="left">eval()</td>
+<td align="left">int()</td>
+<td align="left">open()</td>
+<td align="left">str()</td>
+</tr>
+<tr>
+<td align="left">breakpoint()</td>
+<td align="left">exec()</td>
+<td align="left">isinstance()</td>
+<td align="left">ord()</td>
+<td align="left">sum()</td>
+</tr>
+<tr>
+<td align="left">bytearray()</td>
+<td align="left">filter()</td>
+<td align="left">issubclass()</td>
+<td align="left">pow()</td>
+<td align="left">super()</td>
+</tr>
+<tr>
+<td align="left">bytes()</td>
+<td align="left">float()</td>
+<td align="left">iter()</td>
+<td align="left">print()</td>
+<td align="left">tuple()</td>
+</tr>
+<tr>
+<td align="left">callable()</td>
+<td align="left">format()</td>
+<td align="left">len()</td>
+<td align="left">property()</td>
+<td align="left">type()</td>
+</tr>
+<tr>
+<td align="left">chr()</td>
+<td align="left">frozenset()</td>
+<td align="left">list()</td>
+<td align="left">range()</td>
+<td align="left">vars()</td>
+</tr>
+<tr>
+<td align="left">classmethod()</td>
+<td align="left">getattr()</td>
+<td align="left">locals()</td>
+<td align="left">repr()</td>
+<td align="left">zip()</td>
+</tr>
+<tr>
+<td align="left">compile()</td>
+<td align="left">globals()</td>
+<td align="left">map()</td>
+<td align="left">reversed()</td>
+<td align="left">__import__()</td>
+</tr>
+<tr>
+<td align="left">complex()</td>
+<td align="left">hasattr()</td>
+<td align="left">max()</td>
+<td align="left">round()</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p><strong>delattr(object, name)</strong><br>删除对象属性。<br>delattr(x, ‘foobar’)等于del x.foobar</p>
+<p>**class dict(<strong>kwarg)</strong><br>字典类型。    </p>
+<blockquote>
+<p>&gt;&gt;&gt; d = {‘key1’: ‘value1’}<br>&gt;&gt;&gt; type(d)<br>&lt;\class ‘dict’&gt;</p>
+</blockquote>
+<p><strong>dir([object])</strong><br>若无参数，返回当前环境下所有属性；若参数为一个类，则返回类所有属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; dir()</span><br><span class="line">[&#39;__builtins__&#39;, &#39;__doc__&#39;, &#39;__loader__&#39;, &#39;__name__&#39;, &#39;__package__&#39;, &#39;__spec__&#39;]</span><br><span class="line">&gt;&gt;&gt; import time</span><br><span class="line">&gt;&gt;&gt; dir(time)</span><br><span class="line">[&#39;_STRUCT_TM_ITEMS&#39;, &#39;__doc__&#39;, &#39;__loader__&#39;, &#39;__name__&#39;, &#39;__package__&#39;, &#39;__spec__&#39;, &#39;altzone&#39;, &#39;asctime&#39;, &#39;clock&#39;, &#39;ctime&#39;, &#39;daylight&#39;, &#39;get_clock_info&#39;, &#39;gmtime&#39;, &#39;localtime&#39;, &#39;mktime&#39;, &#39;monotonic&#39;, &#39;perf_counter&#39;, &#39;process_time&#39;, &#39;sleep&#39;, &#39;strftime&#39;, &#39;strptime&#39;, &#39;struct_time&#39;, &#39;time&#39;, &#39;timezone&#39;, &#39;tzname&#39;]</span><br></pre></td></tr></table></figure>
+<p><strong>divmod(a, b)</strong><br>除模函数。返回非复数参数a，b的商和余，即返回(a // b, a % b)。 </p>
+<blockquote>
+<p>&gt;&gt;&gt;divmod(101,2)<br>(50, 1)  </p>
+</blockquote>
+<p>101 // 2 = 50;101 % 2 = 1。等价于50 * 2 + 1 = 101。    </p>
+<p>** <em><strong><a href="enumerate%EF%BC%9A%E6%9E%9A%E4%B8%BE">enumerate</a></strong></em> (iterable, start=0)**<br>返回enumerate对象。参数 iterable 必须可迭代；默认从0开始。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; enumerate([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;],start&#x3D;0)	</span><br><span class="line">&lt;enumerate object at 0x0000000003610708&gt;	</span><br><span class="line">&gt;&gt;&gt; list(enumerate([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;],start&#x3D;0))	</span><br><span class="line">[(0, &#39;a&#39;), (1, &#39;b&#39;), (2, &#39;c&#39;)]	</span><br><span class="line">&gt;&gt;&gt; list(enumerate([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;],start&#x3D;1))	</span><br><span class="line">[(1, &#39;a&#39;), (2, &#39;b&#39;), (3, &#39;c&#39;)]	</span><br></pre></td></tr></table></figure>
+<p><strong>eval(expression[, globals[, locals]])</strong><br>计算函数。返回包含全局变量/本地变量的字符串表达式结果。 </p>
+<blockquote>
+<p>&gt;&gt;&gt; x = 1<br>&gt;&gt;&gt;  eval(‘x + 1’)<br>2  </p>
+</blockquote>
+<p><strong>exec(object[, globals[, locals]])</strong><br>执行函数。可包含全局变量/本地变量，返回字符串或代码的Python命令结果。 </p>
+<blockquote>
+<p>&gt;&gt;&gt; n = 233<br>&gt;&gt;&gt; exec(‘print(n)’)<br>233  </p>
+</blockquote>
+<p><strong>filter(function, iterable)</strong><br>过滤函数。迭代器元素如果经过判断函数为真，则被过滤为一个结果。</p>
+<pre><code>&gt;&gt;&gt; y = filter(lambda x: x % 2 == 0, range(11))
+&gt;&gt;&gt; print(y)
+&lt;filter object at 0x0000000000B9F7B8&gt;
+&gt;&gt;&gt; print(list(y))
+[0, 2, 4, 6, 8, 10]
+</code></pre>
+<p><strong>class float([x])</strong><br>返回浮点数。</p>
+<blockquote>
+<p>&gt;&gt;&gt; float(-233)<br>-233.0<br>&gt;&gt;&gt; float(233e-003)<br>0.233<br>&gt;&gt;&gt; float(233E3)<br>233000.0</p>
+</blockquote>
+<p><strong>format(value[, format_spec])</strong><br>格式化函数。格式化一个值。</p>
+<blockquote>
+<p>&gt;&gt;&gt; print(“{}”.format(‘Hello World’))<br>Hello World</p>
+</blockquote>
+<p><strong>class frozenset([iterable])</strong><br>返回生成不可更改的集合。</p>
+<blockquote>
+<p>&gt;&gt;&gt; frozenset(range(10))<br>frozenset({0, 1, 2, 3, 4, 5, 6, 7, 8, 9})</p>
+</blockquote>
+<p><strong>getattr(object, name[, default])</strong><br>若存在对象属性，返回对应值，否则报AttributeError错误。    </p>
+<blockquote>
+<p>&gt;&gt;&gt; import time<br>&gt;&gt;&gt; getattr(time, ‘localtime’)<br>&lt; built-in function localtime &gt;</p>
+</blockquote>
+<p><strong>globals()</strong><br>返回当前环境下所有类和参数字典。</p>
+<blockquote>
+<p>&gt;&gt;&gt; globals()<br>{‘<strong>doc</strong>‘: None, ‘<strong>builtins</strong>‘: &lt;module ‘builtins’ (built-in)&gt;, ‘<strong>loader</strong>‘: &lt;class ‘_frozen_importlib.BuiltinImporter’&gt;, ‘<strong>name</strong>‘: ‘<strong>main</strong>‘, ‘<strong>package</strong>‘: None, ‘<strong>spec</strong>‘: None}</p>
+</blockquote>
+<p><strong>hasattr(object, name)</strong><br>若存在对象属性，返回True，否则False。</p>
+<blockquote>
+<p>&gt;&gt;&gt; hasattr(time, ‘localtime’)<br>True<br>&gt;&gt;&gt; hasattr(time, ‘realtime’)<br>False    </p>
+</blockquote>
+</div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"></div></article></div><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/55967.html"><i class="fas fa-angle-double-right"></i>Python内置函数01</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-04-30T03:55:27.000Z" title="4/30/2021, 11:55:27 AM">2021-04-30</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-clock"> </i>3 分钟读完 (大约518个字)</span></div></div><div class="content"><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">内置函数</th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abs()</td>
+<td align="left">delattr()</td>
+<td align="left">hash()</td>
+<td align="left">memoryview()</td>
+<td align="left">set()</td>
+</tr>
+<tr>
+<td align="left">all()</td>
+<td align="left">dict()</td>
+<td align="left">help()</td>
+<td align="left">min()</td>
+<td align="left">setattr()</td>
+</tr>
+<tr>
+<td align="left">any()</td>
+<td align="left">dir()</td>
+<td align="left">hex()</td>
+<td align="left">next()</td>
+<td align="left">slice()</td>
+</tr>
+<tr>
+<td align="left">ascii()</td>
+<td align="left">divmod()</td>
+<td align="left">id()</td>
+<td align="left">object()</td>
+<td align="left">sorted()</td>
+</tr>
+<tr>
+<td align="left">bin()</td>
+<td align="left">enumerate()</td>
+<td align="left">input()</td>
+<td align="left">oct()</td>
+<td align="left">staticmethod()</td>
+</tr>
+<tr>
+<td align="left">bool()</td>
+<td align="left">eval()</td>
+<td align="left">int()</td>
+<td align="left">open()</td>
+<td align="left">str()</td>
+</tr>
+<tr>
+<td align="left">breakpoint()</td>
+<td align="left">exec()</td>
+<td align="left">isinstance()</td>
+<td align="left">ord()</td>
+<td align="left">sum()</td>
+</tr>
+<tr>
+<td align="left">bytearray()</td>
+<td align="left">filter()</td>
+<td align="left">issubclass()</td>
+<td align="left">pow()</td>
+<td align="left">super()</td>
+</tr>
+<tr>
+<td align="left">bytes()</td>
+<td align="left">float()</td>
+<td align="left">iter()</td>
+<td align="left">print()</td>
+<td align="left">tuple()</td>
+</tr>
+<tr>
+<td align="left">callable()</td>
+<td align="left">format()</td>
+<td align="left">len()</td>
+<td align="left">property()</td>
+<td align="left">type()</td>
+</tr>
+<tr>
+<td align="left">chr()</td>
+<td align="left">frozenset()</td>
+<td align="left">list()</td>
+<td align="left">range()</td>
+<td align="left">vars()</td>
+</tr>
+<tr>
+<td align="left">classmethod()</td>
+<td align="left">getattr()</td>
+<td align="left">locals()</td>
+<td align="left">repr()</td>
+<td align="left">zip()</td>
+</tr>
+<tr>
+<td align="left">compile()</td>
+<td align="left">globals()</td>
+<td align="left">map()</td>
+<td align="left">reversed()</td>
+<td align="left">__import__()</td>
+</tr>
+<tr>
+<td align="left">complex()</td>
+<td align="left">hasattr()</td>
+<td align="left">max()</td>
+<td align="left">round()</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p><strong>abs(X)</strong><br>返回一个数值的绝对值。  </p>
+<blockquote>
+<p>&gt;&gt;&gt;abs(-10)<br>10  </p>
+</blockquote>
+<p>**all( <em><strong><a href="iterable%EF%BC%9A%E5%8F%AF%E8%BF%AD%E4%BB%A3%E5%AF%B9%E8%B1%A1">iterable</a></strong></em> )**<br>若 iterable 的 <em><strong>所有</strong></em> 元素为真（或可迭代对象可为空），则返回True。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;all([])  # 空列表   </span><br><span class="line">True  </span><br><span class="line">&gt;&gt;&gt;all([1,2,3])  </span><br><span class="line">True  </span><br><span class="line">&gt;&gt;&gt;all([1,2,False])  </span><br><span class="line">False  </span><br></pre></td></tr></table></figure>
+
+<p><strong>any(iterable)</strong><br>若 <em><strong>iterable</strong></em> 的 <em><strong>任一</strong></em> 元素为真，则返回True；且___iterable___为空，返回False。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;any([1,False,False])  </span><br><span class="line">True  </span><br><span class="line">&gt;&gt;&gt;any([])  </span><br><span class="line">False  </span><br><span class="line">&gt;&gt;&gt;any([False,False,False])  </span><br><span class="line">False  </span><br></pre></td></tr></table></figure>
+
+<p><strong>ascii(object)</strong><br><del>鸡肋函数</del><br>返回一个对象的<del>可打印表达形式的</del>字符串， 由于 <em><strong><a href="ASCII%EF%BC%9A%E4%BB%85%E5%AE%9A%E4%B9%89%E4%BA%86128%E4%B8%AA%E5%AD%97%E7%AC%A6%E7%9A%84%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F">ASCII</a></strong></em> 编码字数少，故不支持的编码返回使用\x, \u 或 \U转义,与函数<strong>repr()</strong> 类似。  </p>
+<blockquote>
+<p>&gt;&gt;&gt;ascii(‘object’)<br>“‘object’”<br>&gt;&gt;&gt;ascii(‘对象’)<br>“‘\u5bf9\u8c61’”</p>
+</blockquote>
+<p><strong>bin(x)</strong><br>返回一个将整数转换为带‘0b’的二进制的字符串。</p>
+<blockquote>
+<p>&gt;&gt;&gt;bin(233)<br>‘0b11101001’  </p>
+</blockquote>
+<p><del>去“0b”前缀：</del><br><del>&gt;&gt;&gt;format(14, ‘#b’), format(14, ‘b’)</del><br><del>(‘0b1110’, ‘1110’)</del><br><del>&gt;&gt;&gt;f’{14:#b}’, f’{14:b}’</del><br><del>(‘0b1110’, ‘1110’)</del>     </p>
+<p><strong>class bool([x])</strong><br>返回对象的布尔值，True 或 False。<br>若x为假或空，则为 False。</p>
+<blockquote>
+<p>&gt;&gt;&gt;bool(233)<br>True<br>&gt;&gt;&gt;bool(‘’)  # 空字符串<br>False  </p>
+</blockquote>
+<p><strong>breakpoint(*args, **kws)</strong><br>函数执行调用中断。<br><del>应用意义不明</del>    </p>
+<p><strong>class bytearray([source[, encoding[, errors]]])</strong><br>返回字节数组，可变序列。<br><del>应用意义不明</del>    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; bytearray()</span><br><span class="line">bytearray(b&#39;&#39;)</span><br><span class="line">&gt;&gt;&gt; bytearray(&#39;对象&#39;, encoding&#x3D;&#39;utf-8&#39;)</span><br><span class="line">bytearray(b&#39;\xe5\xaf\xb9\xe8\xb1\xa1&#39;)</span><br><span class="line">&gt;&gt;&gt; bytearray(1)</span><br><span class="line">bytearray(b&#39;\x00&#39;)</span><br><span class="line">&gt;&gt;&gt; bytearray([1,2,3])</span><br><span class="line">bytearray(b&#39;\x01\x02\x03&#39;)</span><br></pre></td></tr></table></figure>
+<p><strong>class bytes([source[, encoding[, errors]]])</strong><br>返回字节对象，等价于bytearray，不同点是不可变序列。<br><del>应用意义不明</del>    </p>
+<p><strong>callable(object)</strong><br>如果对象可被调用，返回 True。<br><del>应用意义不明</del>    </p>
+<p><strong>chr(i)</strong><br>返回由整数i，使用 Unicode 编码的特征码字符串。</p>
+<blockquote>
+<p>&gt;&gt;&gt;chr(54321)<br>‘퐱’  </p>
+</blockquote>
+<p><strong>@classmethod</strong><br>转换一个模块为类模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class china:</span><br><span class="line">    @classmethod</span><br><span class="line">    def person(country): ...</span><br></pre></td></tr></table></figure>
+
+<p><strong>compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)</strong><br>编译代码。</p>
+<p><strong>class complex([real[, imag]])</strong><br>返回复数。</p>
+<blockquote>
+<p>&gt;&gt;&gt;complex(1, -1)<br>(1-1j)</p>
+</blockquote>
+</div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"></div></article></div><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/21939.html"><i class="fas fa-angle-double-right"></i>使用npm安装hexo搭建github个人博客</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-04-27T06:27:00.000Z" title="4/27/2021, 2:27:00 PM">2021-04-27</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B/">应用教程</a></span><span class="level-item"><i class="far fa-clock"> </i>7 分钟读完 (大约1056个字)</span></div></div><div class="content"><p><em><strong>(教程)[nodejs|hexo|github]</strong></em></p>
+<p><strong>本文章讲述在安装nodejs环境后，再安装Hexo等安装包搭建一个Linux服务器。</strong></p>
+<ul>
+<li><strong>顾师傅三步总结：</strong><br>第一步： 安装nodejs相关版本包并配置。<br>第二步： 下载安装hexo包及相关包并初始化。<br>第三步： 创建github仓库修改相应hexo配置文件即可上传。</li>
+</ul>
+<h2 id="安装nodejs相关版本包并配置"><a href="#安装nodejs相关版本包并配置" class="headerlink" title="安装nodejs相关版本包并配置"></a>安装nodejs相关版本包并配置</h2><p>官网：<a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org</a><br>官网编译包地址：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/">https://nodejs.org/dist/</a><br>根据实际使用需要，下载对应平台的软件后安装。</p>
+<p><img src="/images/pasted-Nodejs_install.png" alt="顾师傅"></p>
+<p>安装:<br><code>wget https://nodejs.org/dist/v14.0.0/node-v14.0.0-linux-x64.tar.gz  </code><br>如果出现<br>【-bash: wget: command not found】<br>则<br>【yum install -y wget】</p>
+<p>解压：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar zxf node-v14.0.0-linux-x64.tar.gz</span><br><span class="line">tree -L 2 node-v14.0.0-linux-x64</span><br></pre></td></tr></table></figure>
+
+
+<p>目录结构如下:<br>node-v14.0.0-linux-x64/<br> ├── bin<br> │   ├── <code>node</code><br> │   ├── <code>npm</code> -&gt; ../lib/node_modules/npm/bin/npm-cli.js<br> │   └── <code>npm</code> -&gt; ../lib/node_modules/npm/bin/npx-cli.js<br> ├── CHANGELOG.md<br> ├── include<br> │   └── node<br> ├── lib<br> │   └── node_modules<br> ├── LICENSE<br> ├── README.md<br> └── share<br>     ├── doc<br>     ├── man<br>     └── systemtap  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd node-v14.0.0-linux-x64&#x2F;  </span><br><span class="line">ln -s XXX&#x2F;bin&#x2F;node &#x2F;usr&#x2F;local&#x2F;bin&#x2F;  </span><br><span class="line">ln -s XXX&#x2F;bin&#x2F;npm &#x2F;usr&#x2F;local&#x2F;bin&#x2F;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注:</strong> “XXX/bin/node”、“XXX/bin/npm”为绝对路径</p>
+</blockquote>
+<p>当上面执行成功，则：<br><code>node --version</code><br>输出<br>v14.0.0</p>
+<p>若网络速度较慢，可使用npm国内淘宝镜像</p>
+<ol>
+<li>命令<br>[root@server ~]# npm config set registry <a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></li>
+<li>验证命令<br>[root@server ~]# npm config get registry<br><a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a><br>如果返回<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a> ，说明镜像配置成功。</li>
+</ol>
+<h2 id="下载安装hexo包及相关包并初始化"><a href="#下载安装hexo包及相关包并初始化" class="headerlink" title="下载安装hexo包及相关包并初始化"></a>下载安装hexo包及相关包并初始化</h2><p><strong>Hexo</strong> 是一个快速、简洁且高效的博客框架。Hexo 使用 <a target="_blank" rel="noopener" href="http://daringfireball.net/projects/markdown/">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<ul>
+<li>  <strong>Hexo包</strong><br>官网：<a target="_blank" rel="noopener" href="https://hexo.io/">https://hexo.io/</a><br>文档：<a target="_blank" rel="noopener" href="https://hexo.io/docs/">https://hexo.io/docs/</a></li>
+</ul>
+<p>安装 Hexo 前置环境：<br><code>yum install git-core</code><br>安装 Hexo：<br><code>npm install -g hexo-cli</code><br>此时可发现前面node文件下多了<br>├── bin<br>│   ├── <code>hexo</code> -&gt; ../lib/node_modules/hexo-cli/bin/hexo<br>同上创建软链接<br>ln -s XXX/bin/hexo /usr/local/bin/</p>
+<ul>
+<li><strong>初始化建站</strong>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;save web folder&gt;  </span><br><span class="line">$ cd &lt;save web folder&gt;  </span><br><span class="line">$ npm install  </span><br></pre></td></tr></table></figure>
+若第一步执行失败：<br>[Error: ENOENT: no such file or directory, scandir ‘/XXX/node-v14.0.0-linux-x64/lib/node_modules/hexo-cli/assets’]<br>则替换为执行：<br><code>git clone https://gitee.com/gitmirror/hexo-starter.git</code>  </li>
+</ul>
+<hr>
+<p>[可选]</p>
+<ul>
+<li>  <strong>使用hexo主题icarus</strong>  </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-icarus  </span><br><span class="line">hexo config theme icarus  </span><br></pre></td></tr></table></figure>
+
+<p>[\可选]  </p>
+<hr>
+<p>生成配置：<br><code>hexo g</code><br>启动服务：<br><code>hexo s</code></p>
+<p>输出信息：<br><code>INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></p>
+<p>服务器IP加端口号4000即可访问Hexo博客</p>
+<h2 id="创建github仓库修改相应hexo配置文件即可上传"><a href="#创建github仓库修改相应hexo配置文件即可上传" class="headerlink" title="创建github仓库修改相应hexo配置文件即可上传"></a>创建github仓库修改相应hexo配置文件即可上传</h2><p><strong>一、创建仓库</strong><br>注册/登录GitHub账号后，打开 <a target="_blank" rel="noopener" href="https://github.com/new">https://github.com/new</a> 页面创建仓库，仅填写”Repository name”此项即可。  </p>
+<blockquote>
+<p><strong>注:</strong> 仓库名称一定要符合《 用户名.github.io 》的格式  </p>
+</blockquote>
+<p><img src="/images/pasted-Github_repository.png" alt="顾师傅"><br><strong>二、SSH登录仓库</strong>   </p>
+<p><em><strong>执行命令生成密钥对 :</strong></em><br><code>ssh-keygen -C &quot;邮箱地址&quot;</code><br>一直按enter回车<br>在“~/.ssh/”目录下，生成了公钥id_rsa.pub和私钥id_rsa。<br>执行<code>cat ~/.ssh/id_rsa.pub</code><br>将输出的公钥内容复制到<br><a target="_blank" rel="noopener" href="https://github.com/settings/ssh/new%E7%9A%84key%E4%BD%8D%E7%BD%AE%E3%80%82">https://github.com/settings/ssh/new的key位置。</a><br><img src="/images/pasted-SSH_public_key.png" alt="顾师傅"></p>
+<p><em><strong>输入命令，绑定GitHub账户:</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;邮箱地址&quot;</span><br><span class="line">git config --global user.name &quot;用户名&quot;</span><br></pre></td></tr></table></figure>
+<p>测试连接  </p>
+<p><code>ssh -T git@github.com</code></p>
+<p>提示含 《You’ve successfully authenticated》，表明已经成功连接。</p>
+<p><strong>三、部署Hexo到GitHub</strong>   </p>
+<p> <code>Ctrl + C</code>中断后台运行的Hexo博客<br> 安装发布到github需要的npm包<br> <code>npm install hexo-deployer-git --save</code><br> 修改当前目录下的_config.yml文件。<br> <code>vim _config.yml</code><br> 最下面修改为  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">  type: git  </span><br><span class="line">  repo: git@github.com:用户名&#x2F;用户名.github.io.git  </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>分别执行：<br><code>hexo g</code><br><code>hexo d</code><br>打开https://用户名.github.io即可看到部署的博客  </p>
+<hr>
+<p>[可选]<br> 安装Hexo写文章的插件</p>
+<pre><code>npm install --save hexo-admin
+hexo server -d
+</code></pre>
+<p>访问 <a target="_blank" rel="noopener" href="http://localhost:4000/admin/">http://localhost:4000/admin/</a> 即可编辑<br>[\可选]  </p>
+<hr>
+</div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"><div class="article-tags is-size-7 is-uppercase"><i class="fas fa-tags has-text-grey"></i> <a class="link-muted" rel="tag" href="/tags/node/">node, </a><a class="link-muted" rel="tag" href="/tags/hexo/">hexo </a></div></div></article></div><div class="card"><article class="card-content article" role="article"><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"><a class="has-link-black-ter" href="/posts/12335.html"><i class="fas fa-angle-double-right"></i>使用Vagrant创建服务器</a></h1><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-alt"> </i><span class="level-item"><time dateTime="2021-04-21T02:40:00.000Z" title="4/21/2021, 10:40:00 AM">2021-04-21</time>发表</span><span class="level-item"><i class="far fa-user"> </i> 顾师傅 </span><span class="level-item"><i class="far fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B/">应用教程</a></span><span class="level-item"><i class="far fa-clock"> </i>4 分钟读完 (大约601个字)</span></div></div><div class="content"><p><em><strong>(教程)[Oracle VM VirtualBox|Vagrant|Linux]</strong></em></p>
+<p><strong>本文章讲述在VirtualBox环境下，使用Vagrant安装Linux服务器。</strong></p>
+<ul>
+<li><strong>顾师傅三步总结：</strong><br>第一步： 下载安装Oracle VM VirtualBox环境。<br>第二步： 下载安装Vagrant软件及想要的镜像。<br>第三步： 执行相应Vagrant命令，服务器即可启动。</li>
+</ul>
+<h2 id="下载安装Oracle-VM-VirtualBox"><a href="#下载安装Oracle-VM-VirtualBox" class="headerlink" title="下载安装Oracle VM VirtualBox"></a>下载安装Oracle VM VirtualBox</h2><p>官网：<a target="_blank" rel="noopener" href="https://www.virtualbox.org/">https://www.virtualbox.org/</a><br>下载链接：<a target="_blank" rel="noopener" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a><br><a target="_blank" rel="noopener" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+<p>根据实际使用需要，下载对应平台的软件后安装。</p>
+<p><img src="/images/pasted-VirtualBox_download.png" alt="顾师傅"></p>
+<h2 id="下载安装Vagrant软件及想要的镜像"><a href="#下载安装Vagrant软件及想要的镜像" class="headerlink" title="下载安装Vagrant软件及想要的镜像"></a>下载安装Vagrant软件及想要的镜像</h2><ul>
+<li><p>  <strong>❶ Vagrant软件</strong><br>官网：<a target="_blank" rel="noopener" href="https://www.vagrantup.com/">https://www.vagrantup.com/</a><br>下载链接：<a target="_blank" rel="noopener" href="https://www.vagrantup.com/downloads">https://www.vagrantup.com/downloads</a></p>
+</li>
+<li><p>  <strong>❷ Vagrant镜像</strong><br>镜像即系统。<br>根据自身使用习惯，选择对应系统的版本。  <a target="_blank" rel="noopener" href="https://app.vagrantup.com/boxes/search">https://app.vagrantup.com/boxes/search</a></p>
+</li>
+</ul>
+<p>限于各种下载问题，特此贴出几个国内镜像。  </p>
+<h3 id="Centos"><a href="#Centos" class="headerlink" title="Centos"></a>Centos</h3><p>下载链接：<a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/centos-cloud/centos">https://mirrors.ustc.edu.cn/centos-cloud/centos</a> </p>
+<p>镜像例子: <a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/centos-cloud/centos/7/vagrant/x86_64/images/CentOS-7.box">https://mirrors.ustc.edu.cn/centos-cloud/centos/7/vagrant/x86_64/images/CentOS-7.box</a>  </p>
+<h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h3><p>下载链接：<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/bionic/current/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/bionic/current/</a>  </p>
+<p>镜像例子: <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/bionic/current/bionic-server-cloudimg-amd64-vagrant.box">https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/bionic/current/bionic-server-cloudimg-amd64-vagrant.box</a> </p>
+<h2 id="执行相应Vagrant命令，服务器即可启动"><a href="#执行相应Vagrant命令，服务器即可启动" class="headerlink" title="执行相应Vagrant命令，服务器即可启动"></a>执行相应Vagrant命令，服务器即可启动</h2><ul>
+<li><p>两款软件都安装好之后，新建一个自定义的文件夹，以便统一存放之后的虚拟机。</p>
+<p>  D:\vagrant 下目录结构：  </p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server_1</span><br><span class="line">CentOS-7.1.1503-x86_64.box</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><img src="/images/pasted-Vagrant_command.png" alt="顾师傅"></p>
+<ul>
+<li><p>执行添加镜像，启动虚拟服务器。</p>
+<p>  vagrant添加镜像  </p>
+<p>  <code>vagrant box add server_1 D:\vagrant\CentOS-7.1.1503-x86_64.box</code></p>
+<p>  语法：vagrant box add 【自定义虚拟机名称】【镜像位置】<br>  vagrant初始化镜像  </p>
+<p>  <code>vagrant init server_1</code></p>
+<p>  语法：vagrant init 【自定义虚拟机名称】<br>  vagrant启动镜像</p>
+<p>  <code>vagrant up</code>  </p>
+</li>
+</ul>
+<p>语法：vagrant up  </p>
+<p>至此，虚拟机设置并启动完毕。</p>
+<hr>
+<p>设置连接服务器</p>
+<p>命令：vagrant ssh<br>使用vagrant连接虚拟机<br>命令：sudo passwd root<br>使用sudo命令设置root密码<br>输入2次密码设置root用户便可登录</p>
+<p>此时使用Oracle VM VirtualBox便可登录，不过由于操作较为不便，可设置使用自己喜欢的连接工具设置连接。</p>
+<ul>
+<li>  注：端口号为初始化时端口号。</li>
+</ul>
+<p><img src="/images/pasted-Xshell_config.png" alt="顾师傅"><br>详细设置见上图。</p>
+</div><hr style="height:1px;margin:1rem 0"><div class="level is-mobile is-flex"><div class="article-tags is-size-7 is-uppercase"><i class="fas fa-tags has-text-grey"></i> <a class="link-muted" rel="tag" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机, </a><a class="link-muted" rel="tag" href="/tags/Linux/">Linux, </a><a class="link-muted" rel="tag" href="/tags/Vagrant/">Vagrant </a></div></div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/%E3%83%98%E3%82%A4.jpg" alt="顾师傅"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">顾师傅</p><p class="is-size-6 is-block">一个兴趣使然记录感悟的修行者</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>三十三洞天内</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Linux/"><span class="tag">Linux</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Vagrant/"><span class="tag">Vagrant</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/node/"><span class="tag">node</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"><span class="tag">虚拟机</span><span class="tag">1</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%BA%94%E7%94%A8%E6%95%99%E7%A8%8B/"><span class="level-start"><span class="level-item">应用教程</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-01T02:10:18.000Z">2021-06-01</time></p><p class="title"><a href="/posts/18439.html">Python面向对象</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-05-27T06:15:07.000Z">2021-05-27</time></p><p class="title"><a href="/posts/6558.html">Python内置函数05</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-05-12T07:37:54.000Z">2021-05-12</time></p><p class="title"><a href="/posts/55647.html">Python内置函数04</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-05-07T03:35:00.000Z">2021-05-07</time></p><p class="title"><a href="/posts/6942.html">Python内置函数03</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-05-07T01:44:00.000Z">2021-05-07</time></p><p class="title"><a href="/posts/56287.html">Python内置函数02</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_gu.png" alt="顾师傅的修行记录" height="28"></a><p class="is-size-7"><span>&copy; 2021 顾师傅</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body><script src="https://cdn.bootcdn.net/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script><script src="/js/clicklove.js"></script><script src="/js/live2d_autoload.js" type="text/javascript"></script></html>
